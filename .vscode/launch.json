@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Remote Debugpy",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "100.84.69.83",
+                "port": 9999
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}", // 本地 VSCode 工作目录
+                    "remoteRoot": "/wyc/code/BEVFormer" // 远程服务器上 main.py 所在目录
+                }
+            ]
+        }
+    ]
+}
