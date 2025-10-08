@@ -289,7 +289,7 @@ class CustomNuScenesDataset(NuScenesDataset):
             patch_angle += 360  # 确保角度在0-360度范围内
             
         # 设置CAN总线数据的角度信息
-        can_bus[-2] = patch_angle / 180 * np  # 弧度制角度
+        can_bus[-2] = patch_angle / 180 * np.pi  # 弧度制角度
         can_bus[-1] = patch_angle                # 度数制角度
 
         return input_dict
